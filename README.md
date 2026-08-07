@@ -1,23 +1,24 @@
 # Occupational Exposure to Artificial Intelligence and Labor-Market Outcomes in Brazil: Replication Package
 
-This repository contains the version 2.0.0 replication package for Manoel
-Brasil Orlandi's master's dissertation at Fundação Getulio Vargas, São Paulo
-School of Economics (FGV EESP). It reproduces every computational table and
-figure in Sections 3--5 and Appendices A--D. Table 2.1 is a literature
-synthesis and is intentionally outside the computational registry.
+Este repositório contém a versão 2.0.0 do pacote de replicação da dissertação
+de mestrado de Manoel Brasil Orlandi na Fundação Getulio Vargas, Escola de
+Economia de São Paulo (FGV EESP). O pacote reproduz todas as tabelas e figuras
+computacionais das Seções 3--5 e dos Apêndices A--D. A Tabela 2.1 é uma síntese
+da literatura e, intencionalmente, não faz parte do registro computacional.
 
-- Author: [Manoel Brasil Orlandi](https://orcid.org/0009-0008-2432-812X)
-- Affiliation: Fundação Getulio Vargas, São Paulo School of Economics (FGV EESP)
+- Autor: [Manoel Brasil Orlandi](https://orcid.org/0009-0008-2432-812X)
+- Afiliação: Fundação Getulio Vargas, Escola de Economia de São Paulo (FGV EESP)
 
-The manuscript registry contains exactly 53 publications. Each row in
-`config/manuscript_artifacts.csv` names its producer, analytical input,
-reference artifact, and public command. Narrative quantities are independently
-registered in `config/numeric_claims.csv` and reconciled after every run.
+O registro da dissertação contém exatamente 53 publicações. Cada linha de
+`config/manuscript_artifacts.csv` identifica seu produtor, insumo analítico,
+artefato de referência e comando público. Os números apresentados no texto
+são registrados separadamente em `config/numeric_claims.csv` e reconciliados
+após cada execução.
 
-## Quick start
+## Início rápido
 
-Requirements are Python 3.10, `uv`, R 4.4.1, and the analytical bundle
-described in `DATA_AVAILABILITY.md`.
+Os requisitos são Python 3.10, `uv`, R 4.4.1 e o bundle analítico descrito em
+`DATA_AVAILABILITY.md`.
 
 ```bash
 uv sync --frozen
@@ -30,23 +31,24 @@ uv run python run_replication.py \
   --output-dir results/reproduced
 ```
 
-The locked R environment includes `fixest` 0.14.0, `HonestDiD` 0.2.6, and
-`data.table` 1.17.0. Cross-language model contracts are estimated independently;
-R never reads coefficients produced by Python. Every public run fails at
-preflight unless R 4.4.1 and all package versions match `renv.lock`.
-The HonestDiD routines consume the event-study vector and covariance matrix
-estimated by that independent R replay; Python validates those inputs against
-its own estimates before either sensitivity analysis can run.
+O ambiente R bloqueado inclui `fixest` 0.14.0, `HonestDiD` 0.2.6 e
+`data.table` 1.17.0. Os contratos de modelo entre linguagens são estimados de
+forma independente: o R nunca lê coeficientes produzidos pelo Python. Toda
+execução pública falha na verificação preliminar se o R 4.4.1 e as versões dos
+pacotes não corresponderem ao `renv.lock`. As rotinas do HonestDiD recebem o
+vetor do estudo de evento e a matriz de covariância estimados nessa replicação
+independente em R; antes de executar qualquer análise de sensibilidade, o
+Python valida esses insumos contra suas próprias estimativas.
 
-`reproduce` is offline: it reads only the frozen analytical bundle, re-estimates
-the registered results, renders the publications, validates the immutable
-reference, runs independent R replications, and reconciles the manuscript
-claims. `full` acquires missing official sources, verifies their hashes,
-rebuilds the derived inputs, and then executes the same inferential DAG. A
-`full` run containing PNADc requires an explicit `--billing-project` and fails
-at preflight when it is omitted.
+O modo `reproduce` funciona offline: lê apenas o bundle analítico congelado,
+reestima os resultados registrados, renderiza as publicações, valida a
+referência imutável, executa as replicações independentes em R e reconcilia os
+números da dissertação. O modo `full` obtém as fontes oficiais ausentes,
+verifica seus hashes, reconstrói os insumos derivados e, então, executa o mesmo
+DAG inferencial. Uma execução `full` que inclua a PNADc exige a opção explícita
+`--billing-project` e falha na verificação preliminar quando ela é omitida.
 
-Inspect the complete plan without executing it:
+Para inspecionar o plano completo sem executá-lo:
 
 ```bash
 uv run python run_replication.py \
@@ -56,7 +58,8 @@ uv run python run_replication.py \
   --dry-run
 ```
 
-Rebuild every component from the frozen official-source cache:
+Para reconstruir todos os componentes a partir do cache congelado das fontes
+oficiais:
 
 ```bash
 uv run python run_replication.py \
@@ -67,7 +70,7 @@ uv run python run_replication.py \
   --billing-project YOUR_BILLING_PROJECT
 ```
 
-## Public interface
+## Interface pública
 
 ```text
 python run_replication.py
@@ -81,79 +84,81 @@ python run_replication.py
   [--dry-run]
 ```
 
-The legacy alias `--section 3|4-5|all` remains available. `--section 4-5`
-selects CAGED, RAIS, PNADc, and the spatial support analysis.
+O alias legado `--section 3|4-5|all` continua disponível. A opção
+`--section 4-5` seleciona CAGED, RAIS, PNADc e a análise de suporte espacial.
 
-Outputs are written only to `results/reproduced/` or the requested output
-directory. An existing directory is replaced only when its manifest proves
-that it is a complete output created by this package. Code, inputs, and
-`results/reference/` are never valid output destinations. The output directory
-must also be disjoint from both `--data-dir` and `--raw-dir`: it cannot equal,
-contain, or be contained by either input root.
+Os resultados são gravados somente em `results/reproduced/` ou no diretório de
+saída solicitado. Um diretório existente só é substituído quando seu manifesto
+comprova que ele é uma saída completa criada por este pacote. O código, os
+insumos e `results/reference/` nunca são destinos de saída válidos. O diretório
+de saída também deve ser disjunto de `--data-dir` e `--raw-dir`: ele não pode
+ser igual, conter ou estar contido em nenhuma dessas raízes de entrada.
 
-## Components
+## Componentes
 
-| Target | Manuscript coverage | Role |
+| Alvo | Cobertura na dissertação | Papel |
 |---|---|---|
-| `section3` | Section 3 | PNADc 2025 Q3 exposure and distributional profile |
-| `caged` | Sections 4, 5.1--5.2 and Appendices A and C | Panels, DiD/DDD, event studies, diagnostics, and occupation cases |
-| `rais` | Appendices B.1 and D.1 | Formal stock, turnover, and job tenure |
-| `pnadc` | Appendices B.2 and D.2 | Informality, self-employment, employment stocks, and income |
-| `spatial` | Section 4.5 and Appendices B.3--B.4 | Placebos, pretrends, and the support stopping rule |
+| `section3` | Seção 3 | Exposição na PNADc 2025T3 e perfil distributivo |
+| `caged` | Seções 4, 5.1--5.2 e Apêndices A e C | Painéis, DiD/DDD, estudos de evento, diagnósticos e casos ocupacionais |
+| `rais` | Apêndices B.1 e D.1 | Estoque formal, rotatividade e tempo no emprego |
+| `pnadc` | Apêndices B.2 e D.2 | Informalidade, trabalho por conta própria, estoques de emprego e rendimento |
+| `spatial` | Seção 4.5 e Apêndices B.3--B.4 | Placebos, pré-tendências e regra de parada por suporte |
 
-The spatial component stops at the registered support gate. Family F retains
-12 declared positions, but it contains no treatment coefficient, nominal
-p-value, or multiplicity-adjusted p-value.
+O componente espacial termina no gate de suporte registrado. A família F
+mantém 12 posições declaradas, mas não contém coeficiente de tratamento,
+valor-p nominal nem valor-p ajustado por multiplicidade.
 
-## Evidence and interpretation
+## Evidências e interpretação
 
-The code preserves failed pretrend tests, non-positive-semidefinite covariance
-diagnostics, rank-deficient covariance blocks, thin support, and
-non-identification. These are results, not errors to be hidden. National CAGED
-estimates and subgroup DDD contrasts must be read
-as exploratory post-ChatGPT treated-versus-control differences because the
-registered identifying diagnostics fail. RAIS and PNADc are complementary
-measurement evidence, not causal extensions.
+O código preserva testes de pré-tendências rejeitados, diagnósticos de matrizes
+de covariância não semidefinidas positivas, blocos de covariância com posto
+deficiente, suporte reduzido e ausência de identificação. Esses são resultados,
+não erros que devam ser ocultados. As estimativas nacionais do CAGED e os
+contrastes DDD por subgrupo devem ser interpretados como diferenças
+exploratórias pós-ChatGPT entre grupos tratados e de controle, pois os
+diagnósticos de identificação registrados falham. RAIS e PNADc fornecem
+evidências complementares de mensuração, não extensões causais.
 
-Python performs acquisition, data construction, DAG orchestration, and
-rendering. R receives coefficient-free analytical inputs and model contracts.
-It independently re-estimates every registered numerical result; Python then
-matches stable analysis, model, term, and event-time identifiers. Coefficients
-and standard errors must agree within `1e-6`; observation counts, clusters,
-sample identifiers, statuses, and reference periods must agree exactly.
+O Python realiza a aquisição, a construção dos dados, a orquestração do DAG e
+a renderização. O R recebe insumos analíticos sem coeficientes e contratos de
+modelo. Ele reestima independentemente cada resultado numérico registrado; em
+seguida, o Python combina identificadores estáveis de análise, modelo, termo e
+tempo do evento. Coeficientes e erros-padrão devem concordar dentro de `1e-6`;
+contagens de observações, clusters, identificadores de amostra, status e
+períodos de referência devem coincidir exatamente.
 
-See `RESEARCH_DESIGN.md` for the estimands and scientific gates and
-`DATA_AVAILABILITY.md` for source and bundle details.
+Consulte `RESEARCH_DESIGN.md` para conhecer os estimandos e gates científicos,
+e `DATA_AVAILABILITY.md` para obter detalhes sobre as fontes e o bundle.
 
-## R code companion
+## Guia de código em R
 
-The browser-ready [R code companion](https://manoelbo.github.io/ai-exposure-brazil-replication/)
-follows the dissertation's structure and shows how the analytical panels,
-estimators, tables, figures, and scientific checks are implemented. A
-[standalone HTML copy](docs/index.html) and its source,
-`r-companion/dissertation_code_companion.Rmd`, are included in this repository.
-The companion is a reading aid; the canonical replication interface remains
+O [guia de código em R para leitura no navegador](https://manoelbo.github.io/ai-exposure-brazil-replication/)
+acompanha a estrutura da dissertação e mostra como são implementados os painéis
+analíticos, estimadores, tabelas, figuras e verificações científicas. Este
+repositório inclui uma [cópia HTML independente](docs/index.html) e seu arquivo
+fonte, `r-companion/dissertation_code_companion.Rmd`. O guia é um recurso de
+leitura; a interface canônica de replicação continua sendo
 `run_replication.py`.
 
-## Repository map
+## Estrutura do repositório
 
 ```text
-R/                         independent R estimators
+R/                         estimadores independentes em R
 code/
-  common/                  shared paths, manifests, and validation
-  section3/                descriptive analysis
-  caged/                   CAGED ingestion, panels, models, and audits
-  rais/, pnadc/, spatial/  complementary evidence
-  render/                  manuscript renderers
-  replication/             registries and cross-language checks
-config/                    publication, claim, analysis, and data contracts
-data/                      local mount point; large files are not distributed
-results/reference/         immutable signed reference
-results/reproduced/        default public output
-tests/                     scientific, interface, and portability tests
+  common/                  caminhos, manifestos e validações compartilhados
+  section3/                análise descritiva
+  caged/                   ingestão, painéis, modelos e auditorias do CAGED
+  rais/, pnadc/, spatial/  evidências complementares
+  render/                  renderizadores da dissertação
+  replication/             registros e verificações entre linguagens
+config/                    contratos de publicações, números, análises e dados
+data/                      ponto de montagem local; arquivos grandes não são distribuídos
+results/reference/         referência imutável assinada
+results/reproduced/        saída pública padrão
+tests/                     testes científicos, de interface e de portabilidade
 ```
 
-## Verification
+## Verificação
 
 ```bash
 OPENBLAS_NUM_THREADS=1 \
@@ -164,18 +169,20 @@ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 uv run pytest -q tests
 ```
 
-The complete test suite expects the analytical bundle to be mounted or copied
-at `data/`. Runner-interface and portability tests can be executed without that
-mount; public runs may instead keep the bundle external and pass `--data-dir`.
+A suíte completa de testes espera que o bundle analítico esteja montado ou
+copiado em `data/`. Os testes da interface do runner e de portabilidade podem
+ser executados sem essa montagem; execuções públicas também podem manter o
+bundle fora do repositório e informar seu caminho por `--data-dir`.
 
-The test suite checks the typed DAG, the 53-publication set, numerical claims,
-scientific gates, output isolation, deterministic manifests, and the
-cross-language contracts. A release is not valid merely because a coefficient
-is statistically significant.
+A suíte de testes verifica o DAG tipado, o conjunto de 53 publicações, os
+números da dissertação, os gates científicos, o isolamento das saídas, os
+manifestos determinísticos e os contratos entre linguagens. Uma versão não é
+válida apenas porque um coeficiente é estatisticamente significativo.
 
-## Citation and license
+## Citação e licença
 
-Use `CITATION.cff` to cite the package. Package code and original documentation
-are licensed under MIT; source datasets retain their providers' terms.
+Use `CITATION.cff` para citar o pacote. O código do pacote e a documentação
+original são licenciados sob a licença MIT; os conjuntos de dados de origem
+permanecem sujeitos aos termos de seus respectivos provedores.
 
-The permanent Zenodo DOI will be added before the `v2.0.0` release is tagged.
+O DOI permanente do Zenodo será adicionado antes da criação da tag `v2.0.0`.
