@@ -85,3 +85,10 @@ def test_citation_metadata_matches_the_publication_registry_size() -> None:
 
     assert "53 computational tables and figures" in citation
     assert "52 computational tables and figures" not in citation
+
+
+def test_r_companion_renders_html_tables_instead_of_console_text() -> None:
+    companion = (PACKAGE_ROOT / "docs" / "index.html").read_text(encoding="utf-8")
+
+    assert '<table class="table' in companion
+    assert "<pre><code>## &lt;table" not in companion

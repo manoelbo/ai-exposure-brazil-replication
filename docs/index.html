@@ -2930,483 +2930,1174 @@ dissertação</h2>
 dissertação também mostra duas tabelas descritivas adicionais no
 Apêndice A, ambas já sustentadas por backing data do V2. Por isso, o
 mapa abaixo tem 55 linhas, sem modificar a referência assinada.</p>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Crosswalk between the current manuscript and the V2 code/reference artifacts&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; manuscript_label &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; artifact_id &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; component &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; producer &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; reference_path &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; command &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.1: National event studies and trajectories &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_1_national_event_studies.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.1.1: Admissions by sex &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_1_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_1_1_sex_admissions.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.1.2: Real admission wage by sex &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_1_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_1_2_sex_wage.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.2.1: Admissions by race or color &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_2_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_2_1_race_admissions.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.2.2: Real admission wage by race or color &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_2_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_2_2_race_wage.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.3.1: Admissions by age group &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_3_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_3_1_age_admissions.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.3.2: Real admission wage by age group &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_3_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_3_2_age_wage.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.3.3: Real admission wage for ages 22 to 25 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_3_3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.canaries_wage_figure &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_3_3_canaries_22_25_wage.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.4.1: Admissions by education &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_4_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_4_1_education_admissions.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.4.2: Real admission wage by education &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_4_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_4_2_education_wage.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.5.1: Admissions by pre-treatment income &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_5_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_5_1_income_admissions.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.5.2: Real admission wage by pre-treatment income &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_5_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_5_2_income_wage.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 5.2.6: Within-group DiD estimates by outcome &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_5_2_6 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_5_2_6_group_outcome_forest.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure C.1: Monthly admissions by occupational case and age &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_c_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_c_1_occupation_cases_admissions_by_age.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure C.2: Monthly real admission wage by occupational case and age &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_c_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_figures &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/figures/figure_c_2_occupation_cases_wage_by_age.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 4.2.1: Occupation-month panel scope &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_4_2_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_4_2_1_panel_scope.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 4.2.2: CBO treatment and control classification &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_4_2_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_4_2_2_treatment_classification.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 4.2.3: Panel coverage by exposure group &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_4_2_3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_4_2_3_panel_coverage.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 4.3.1: Analysis outcomes &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_4_3_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_4_3_1_outcomes.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 5.1.1: Sector-control co-principal specifications &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_5_1_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_5_1_1_sector_control.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 5.1: National average results &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_5_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_5_1_national_results.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 5.2.1: Results by sex &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_5_2_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_5_2_1_sex.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 5.2.2: Results by race or color &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_5_2_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_5_2_2_race.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 5.2.3: Results by age group &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_5_2_3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_5_2_3_age.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 5.2.4: Results by education &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_5_2_4 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_5_2_4_education.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 5.2.5: Results by pre-treatment occupational wage &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_5_2_5 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_5_2_5_income.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table A.1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_a_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_a_1_national_diagnostics.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table A.2.1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_a_2_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged audit backing data &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/audit/a1_education_composition_shift.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Backed by V2 CAGED audit &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table A.2.2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_a_2_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged audit backing data &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/audit/a2_wage_price_composition_split.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Backed by V2 CAGED audit &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table A.3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_a_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_a_2_sex.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table A.4 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_a_3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_a_3_race.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table A.5 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_a_4 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_a_4_age.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table A.6 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_a_5 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_a_5_education.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table A.7 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_a_6 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_a_6_income.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table C.1: Occupational case selection and exposure composition &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_c_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.phase8b_tables &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; caged/tables/table_c_1_occupation_cases.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target caged --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table B.2: Exact-model pretrends for PNADc &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_b_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.complementary &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc/tables/table_b_2_pnadc_pretrends.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target pnadc --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table D.2: Occupational composition and stock (Family E) &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_d_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.complementary &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc/tables/table_d_2_pnadc.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target pnadc --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table B.1: Exact-model pretrends for RAIS &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_b_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rais &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.complementary &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rais/tables/table_b_1_rais_pretrends.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target rais --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table D.1: Formal stock turnover and job tenure (Family D) &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_d_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rais &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.complementary &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rais/tables/table_d_1_rais.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target rais --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.10: AI exposure by formality status &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_10 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_10_formality.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.1: Distribution of AI exposure in Brazil &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_1_histogram_kde.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.2: Employed population by AI exposure gradient &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_2_gradient_population.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.3: Occupational composition by AI exposure score &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_3_score_by_occupation_group.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.4: High AI exposure by state &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_4 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_4_state_high_exposure.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.5: AI exposure by sex &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_5 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_5_sex.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.6: AI exposure by race or color &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_6 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_6_race.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.7: AI exposure by age group &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_7 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_7_age.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.8: AI exposure by education &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_8 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_8_education.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Figure 3.9: AI exposure by income group &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; figure_3_9 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/figures/figure_3_9_income.png &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 3.1: Final analytical data specification &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_3_1 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/tables/table_3_1_base_specs.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 3.2: Employed population by AI exposure gradient &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_3_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/tables/table_3_2_gradients.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 3.3: Largest occupations with high AI exposure &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_3_3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/tables/table_3_3_high_exposure_occupations.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table 3.4: AI exposure by sector &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_3_4 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.section3.pipeline &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; section3/tables/table_3_4_sector_exposure.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target section3 --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table B.3: December 2021 temporal placebo &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_b_3 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; spatial &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.complementary &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; spatial/tables/table_b_3_spatial_placebo.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target spatial --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Table B.4: Effective clusters by digital-intensity proxy &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; table_b_4 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; spatial &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code.render.complementary &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; spatial/tables/table_b_4_spatial_support.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; python run_replication.py --target spatial --mode reproduce &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
-<pre><code>## &lt;table class=&quot;table table-striped table-condensed&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; object &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; location &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; V2 source &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; repository root &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Signed reference &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/reference/artifacts &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Analytical bundle &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; data/ (or the bundle_root render parameter) &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Crosswalk between the current manuscript and the V2 code/reference
+artifacts
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+manuscript_label
+</th>
+<th style="text-align:left;">
+artifact_id
+</th>
+<th style="text-align:left;">
+component
+</th>
+<th style="text-align:left;">
+producer
+</th>
+<th style="text-align:left;">
+reference_path
+</th>
+<th style="text-align:left;">
+command
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Figure 5.1: National event studies and trajectories
+</td>
+<td style="text-align:left;">
+figure_5_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_1_national_event_studies.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.1.1: Admissions by sex
+</td>
+<td style="text-align:left;">
+figure_5_2_1_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_1_1_sex_admissions.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.1.2: Real admission wage by sex
+</td>
+<td style="text-align:left;">
+figure_5_2_1_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_1_2_sex_wage.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.2.1: Admissions by race or color
+</td>
+<td style="text-align:left;">
+figure_5_2_2_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_2_1_race_admissions.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.2.2: Real admission wage by race or color
+</td>
+<td style="text-align:left;">
+figure_5_2_2_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_2_2_race_wage.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.3.1: Admissions by age group
+</td>
+<td style="text-align:left;">
+figure_5_2_3_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_3_1_age_admissions.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.3.2: Real admission wage by age group
+</td>
+<td style="text-align:left;">
+figure_5_2_3_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_3_2_age_wage.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.3.3: Real admission wage for ages 22 to 25
+</td>
+<td style="text-align:left;">
+figure_5_2_3_3
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.canaries_wage_figure
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_3_3_canaries_22_25_wage.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.4.1: Admissions by education
+</td>
+<td style="text-align:left;">
+figure_5_2_4_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_4_1_education_admissions.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.4.2: Real admission wage by education
+</td>
+<td style="text-align:left;">
+figure_5_2_4_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_4_2_education_wage.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.5.1: Admissions by pre-treatment income
+</td>
+<td style="text-align:left;">
+figure_5_2_5_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_5_1_income_admissions.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.5.2: Real admission wage by pre-treatment income
+</td>
+<td style="text-align:left;">
+figure_5_2_5_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_5_2_income_wage.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 5.2.6: Within-group DiD estimates by outcome
+</td>
+<td style="text-align:left;">
+figure_5_2_6
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_5_2_6_group_outcome_forest.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure C.1: Monthly admissions by occupational case and age
+</td>
+<td style="text-align:left;">
+figure_c_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_c_1_occupation_cases_admissions_by_age.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure C.2: Monthly real admission wage by occupational case and age
+</td>
+<td style="text-align:left;">
+figure_c_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_figures
+</td>
+<td style="text-align:left;">
+caged/figures/figure_c_2_occupation_cases_wage_by_age.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 4.2.1: Occupation-month panel scope
+</td>
+<td style="text-align:left;">
+table_4_2_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_4_2_1_panel_scope.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 4.2.2: CBO treatment and control classification
+</td>
+<td style="text-align:left;">
+table_4_2_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_4_2_2_treatment_classification.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 4.2.3: Panel coverage by exposure group
+</td>
+<td style="text-align:left;">
+table_4_2_3
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_4_2_3_panel_coverage.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 4.3.1: Analysis outcomes
+</td>
+<td style="text-align:left;">
+table_4_3_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_4_3_1_outcomes.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 5.1.1: Sector-control co-principal specifications
+</td>
+<td style="text-align:left;">
+table_5_1_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_5_1_1_sector_control.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 5.1: National average results
+</td>
+<td style="text-align:left;">
+table_5_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_5_1_national_results.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 5.2.1: Results by sex
+</td>
+<td style="text-align:left;">
+table_5_2_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_5_2_1_sex.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 5.2.2: Results by race or color
+</td>
+<td style="text-align:left;">
+table_5_2_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_5_2_2_race.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 5.2.3: Results by age group
+</td>
+<td style="text-align:left;">
+table_5_2_3
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_5_2_3_age.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 5.2.4: Results by education
+</td>
+<td style="text-align:left;">
+table_5_2_4
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_5_2_4_education.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 5.2.5: Results by pre-treatment occupational wage
+</td>
+<td style="text-align:left;">
+table_5_2_5
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_5_2_5_income.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table A.1
+</td>
+<td style="text-align:left;">
+table_a_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_a_1_national_diagnostics.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table A.2.1
+</td>
+<td style="text-align:left;">
+table_a_2_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+caged audit backing data
+</td>
+<td style="text-align:left;">
+caged/audit/a1_education_composition_shift.csv
+</td>
+<td style="text-align:left;">
+Backed by V2 CAGED audit
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table A.2.2
+</td>
+<td style="text-align:left;">
+table_a_2_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+caged audit backing data
+</td>
+<td style="text-align:left;">
+caged/audit/a2_wage_price_composition_split.csv
+</td>
+<td style="text-align:left;">
+Backed by V2 CAGED audit
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table A.3
+</td>
+<td style="text-align:left;">
+table_a_2
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_a_2_sex.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table A.4
+</td>
+<td style="text-align:left;">
+table_a_3
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_a_3_race.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table A.5
+</td>
+<td style="text-align:left;">
+table_a_4
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_a_4_age.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table A.6
+</td>
+<td style="text-align:left;">
+table_a_5
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_a_5_education.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table A.7
+</td>
+<td style="text-align:left;">
+table_a_6
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_a_6_income.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table C.1: Occupational case selection and exposure composition
+</td>
+<td style="text-align:left;">
+table_c_1
+</td>
+<td style="text-align:left;">
+caged
+</td>
+<td style="text-align:left;">
+code.render.phase8b_tables
+</td>
+<td style="text-align:left;">
+caged/tables/table_c_1_occupation_cases.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target caged –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table B.2: Exact-model pretrends for PNADc
+</td>
+<td style="text-align:left;">
+table_b_2
+</td>
+<td style="text-align:left;">
+pnadc
+</td>
+<td style="text-align:left;">
+code.render.complementary
+</td>
+<td style="text-align:left;">
+pnadc/tables/table_b_2_pnadc_pretrends.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target pnadc –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table D.2: Occupational composition and stock (Family E)
+</td>
+<td style="text-align:left;">
+table_d_2
+</td>
+<td style="text-align:left;">
+pnadc
+</td>
+<td style="text-align:left;">
+code.render.complementary
+</td>
+<td style="text-align:left;">
+pnadc/tables/table_d_2_pnadc.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target pnadc –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table B.1: Exact-model pretrends for RAIS
+</td>
+<td style="text-align:left;">
+table_b_1
+</td>
+<td style="text-align:left;">
+rais
+</td>
+<td style="text-align:left;">
+code.render.complementary
+</td>
+<td style="text-align:left;">
+rais/tables/table_b_1_rais_pretrends.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target rais –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table D.1: Formal stock turnover and job tenure (Family D)
+</td>
+<td style="text-align:left;">
+table_d_1
+</td>
+<td style="text-align:left;">
+rais
+</td>
+<td style="text-align:left;">
+code.render.complementary
+</td>
+<td style="text-align:left;">
+rais/tables/table_d_1_rais.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target rais –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.10: AI exposure by formality status
+</td>
+<td style="text-align:left;">
+figure_3_10
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_10_formality.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.1: Distribution of AI exposure in Brazil
+</td>
+<td style="text-align:left;">
+figure_3_1
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_1_histogram_kde.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.2: Employed population by AI exposure gradient
+</td>
+<td style="text-align:left;">
+figure_3_2
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_2_gradient_population.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.3: Occupational composition by AI exposure score
+</td>
+<td style="text-align:left;">
+figure_3_3
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_3_score_by_occupation_group.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.4: High AI exposure by state
+</td>
+<td style="text-align:left;">
+figure_3_4
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_4_state_high_exposure.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.5: AI exposure by sex
+</td>
+<td style="text-align:left;">
+figure_3_5
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_5_sex.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.6: AI exposure by race or color
+</td>
+<td style="text-align:left;">
+figure_3_6
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_6_race.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.7: AI exposure by age group
+</td>
+<td style="text-align:left;">
+figure_3_7
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_7_age.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.8: AI exposure by education
+</td>
+<td style="text-align:left;">
+figure_3_8
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_8_education.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Figure 3.9: AI exposure by income group
+</td>
+<td style="text-align:left;">
+figure_3_9
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/figures/figure_3_9_income.png
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 3.1: Final analytical data specification
+</td>
+<td style="text-align:left;">
+table_3_1
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/tables/table_3_1_base_specs.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 3.2: Employed population by AI exposure gradient
+</td>
+<td style="text-align:left;">
+table_3_2
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/tables/table_3_2_gradients.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 3.3: Largest occupations with high AI exposure
+</td>
+<td style="text-align:left;">
+table_3_3
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/tables/table_3_3_high_exposure_occupations.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table 3.4: AI exposure by sector
+</td>
+<td style="text-align:left;">
+table_3_4
+</td>
+<td style="text-align:left;">
+section3
+</td>
+<td style="text-align:left;">
+code.section3.pipeline
+</td>
+<td style="text-align:left;">
+section3/tables/table_3_4_sector_exposure.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target section3 –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table B.3: December 2021 temporal placebo
+</td>
+<td style="text-align:left;">
+table_b_3
+</td>
+<td style="text-align:left;">
+spatial
+</td>
+<td style="text-align:left;">
+code.render.complementary
+</td>
+<td style="text-align:left;">
+spatial/tables/table_b_3_spatial_placebo.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target spatial –mode reproduce
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Table B.4: Effective clusters by digital-intensity proxy
+</td>
+<td style="text-align:left;">
+table_b_4
+</td>
+<td style="text-align:left;">
+spatial
+</td>
+<td style="text-align:left;">
+code.render.complementary
+</td>
+<td style="text-align:left;">
+spatial/tables/table_b_4_spatial_support.csv
+</td>
+<td style="text-align:left;">
+python run_replication.py –target spatial –mode reproduce
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+object
+</th>
+<th style="text-align:left;">
+location
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+V2 source
+</td>
+<td style="text-align:left;">
+repository root
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Signed reference
+</td>
+<td style="text-align:left;">
+results/reference/artifacts
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Analytical bundle
+</td>
+<td style="text-align:left;">
+data/ (or the bundle_root render parameter)
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div id="medida-de-exposição-e-análise-descritiva-seções-2-e-3" class="section level1" number="2">
@@ -3695,335 +4386,746 @@ cat(toJSON(status, auto_unbox = TRUE, digits = 16), &quot;\n&quot;)</code></pre>
 <div id="diagnóstico-da-base-e-reconciliação-entre-linguagens" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Diagnóstico da base e
 reconciliação entre linguagens</h2>
+<p>A tabela de diagnóstico abaixo não é um resultado substantivo da
+dissertação. Ela documenta a construção da base: quantas observações
+entram, quantas permanecem depois dos filtros, qual população os pesos
+representam e quantas ocupações foram pareadas em quatro ou três
+dígitos. Assim, ela permite conferir se a amostra e a cobertura da
+classificação ocupacional correspondem ao desenho descrito na Seção
+3.</p>
 <div class="status-box status-frozen">
 <strong>Carregado da referência assinada do V2.</strong> São
 diagnósticos congelados e agregados independentes em R. Eles não são
 regenerados neste guia.
 </div>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Section 3 analytical-data build diagnostics&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; metric &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; value &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; after_filters &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 207901.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; final_population &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 97783776.2 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; final_rows &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 207901.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; final_states &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 27.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; initial_rows &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 220091.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_1_digit &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_2_digit &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_3_digit &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 1023113.7 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_4_digit &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 95943649.4 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_total &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 97783776.2 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_unmatched &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 817013.1 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; quarter &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 3.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rows_1_digit &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rows_2_digit &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rows_3_digit &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2613.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rows_4_digit &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 203617.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rows_unmatched &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 1671.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; year &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2025.0 &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Independent R aggregates for Section 3 (first 30 rows)&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; aggregate_id &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; scope &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; key &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; metric &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; value &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::corrected_sectors &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; corrected_sectors &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 19.000000 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::federal_units &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; federal_units &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 27.000000 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::four_digit_match_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; four_digit_match_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 97.939404 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::matched_occupations &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; matched_occupations &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 422.000000 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::observations &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; observations &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 207901.000000 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::occupations &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; occupations &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 428.000000 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::original_sectors &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; original_sectors &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 17.000000 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 97.783776 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::score_coverage_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; score_coverage_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 99.164470 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::scored_population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; scored_population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 96.966763 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::three_digit_match_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; three_digit_match_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 1.256848 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base::sample::unscored_rows_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; base &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; sample &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; unscored_rows_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.803748 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:18-24::high_population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:18-24 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; high_population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2.437084 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:18-24::high_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:18-24 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; high_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 16.247755 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:18-24::low_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:18-24 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; low_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 61.886607 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:18-24::mean_score &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:18-24 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; mean_score &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.303812 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:18-24::moderate_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:18-24 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; moderate_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 21.865638 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:18-24::population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:18-24 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 14.999511 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:25-34::high_population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:25-34 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; high_population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 3.084174 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:25-34::high_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:25-34 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; high_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 12.552972 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:25-34::low_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:25-34 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; low_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 67.540526 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:25-34::mean_score &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:25-34 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; mean_score &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.292780 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:25-34::moderate_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:25-34 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; moderate_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 19.906502 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:25-34::population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:25-34 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 24.569275 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:35-44::high_population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:35-44 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; high_population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2.252937 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:35-44::high_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:35-44 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; high_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 8.834580 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:35-44::low_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:35-44 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; low_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 71.528421 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:35-44::mean_score &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:35-44 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; mean_score &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.276173 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:35-44::moderate_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:35-44 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; moderate_share_pct &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 19.636999 &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic::age:35-44::population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; demographic &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; age:35-44 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; population_m &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 25.501343 &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
-<pre><code>## &lt;table class=&quot;table table-striped table-condensed&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Section 3 Python/R aggregate reconciliation&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; aggregate_rows &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; passed &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; maximum_absolute_difference &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 497 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 497 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Diagnóstico da construção da base analítica da Seção 3
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+metric
+</th>
+<th style="text-align:right;">
+value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+after_filters
+</td>
+<td style="text-align:right;">
+207901.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+final_population
+</td>
+<td style="text-align:right;">
+97783776.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+final_rows
+</td>
+<td style="text-align:right;">
+207901.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+final_states
+</td>
+<td style="text-align:right;">
+27.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+initial_rows
+</td>
+<td style="text-align:right;">
+220091.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+population_1_digit
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+population_2_digit
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+population_3_digit
+</td>
+<td style="text-align:right;">
+1023113.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+population_4_digit
+</td>
+<td style="text-align:right;">
+95943649.4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+population_total
+</td>
+<td style="text-align:right;">
+97783776.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+population_unmatched
+</td>
+<td style="text-align:right;">
+817013.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+quarter
+</td>
+<td style="text-align:right;">
+3.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rows_1_digit
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rows_2_digit
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rows_3_digit
+</td>
+<td style="text-align:right;">
+2613.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rows_4_digit
+</td>
+<td style="text-align:right;">
+203617.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rows_unmatched
+</td>
+<td style="text-align:right;">
+1671.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+year
+</td>
+<td style="text-align:right;">
+2025.0
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Independent R aggregates for Section 3 (first 30 rows)
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+aggregate_id
+</th>
+<th style="text-align:left;">
+scope
+</th>
+<th style="text-align:left;">
+key
+</th>
+<th style="text-align:left;">
+metric
+</th>
+<th style="text-align:right;">
+value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+base::sample::corrected_sectors
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+corrected_sectors
+</td>
+<td style="text-align:right;">
+19.000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::federal_units
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+federal_units
+</td>
+<td style="text-align:right;">
+27.000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::four_digit_match_pct
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+four_digit_match_pct
+</td>
+<td style="text-align:right;">
+97.939404
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::matched_occupations
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+matched_occupations
+</td>
+<td style="text-align:right;">
+422.000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::observations
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+observations
+</td>
+<td style="text-align:right;">
+207901.000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::occupations
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+occupations
+</td>
+<td style="text-align:right;">
+428.000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::original_sectors
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+original_sectors
+</td>
+<td style="text-align:right;">
+17.000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::population_m
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+population_m
+</td>
+<td style="text-align:right;">
+97.783776
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::score_coverage_pct
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+score_coverage_pct
+</td>
+<td style="text-align:right;">
+99.164470
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::scored_population_m
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+scored_population_m
+</td>
+<td style="text-align:right;">
+96.966763
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::three_digit_match_pct
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+three_digit_match_pct
+</td>
+<td style="text-align:right;">
+1.256848
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+base::sample::unscored_rows_pct
+</td>
+<td style="text-align:left;">
+base
+</td>
+<td style="text-align:left;">
+sample
+</td>
+<td style="text-align:left;">
+unscored_rows_pct
+</td>
+<td style="text-align:right;">
+0.803748
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:18-24::high_population_m
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:18-24
+</td>
+<td style="text-align:left;">
+high_population_m
+</td>
+<td style="text-align:right;">
+2.437084
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:18-24::high_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:18-24
+</td>
+<td style="text-align:left;">
+high_share_pct
+</td>
+<td style="text-align:right;">
+16.247755
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:18-24::low_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:18-24
+</td>
+<td style="text-align:left;">
+low_share_pct
+</td>
+<td style="text-align:right;">
+61.886607
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:18-24::mean_score
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:18-24
+</td>
+<td style="text-align:left;">
+mean_score
+</td>
+<td style="text-align:right;">
+0.303812
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:18-24::moderate_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:18-24
+</td>
+<td style="text-align:left;">
+moderate_share_pct
+</td>
+<td style="text-align:right;">
+21.865638
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:18-24::population_m
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:18-24
+</td>
+<td style="text-align:left;">
+population_m
+</td>
+<td style="text-align:right;">
+14.999511
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:25-34::high_population_m
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:25-34
+</td>
+<td style="text-align:left;">
+high_population_m
+</td>
+<td style="text-align:right;">
+3.084174
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:25-34::high_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:25-34
+</td>
+<td style="text-align:left;">
+high_share_pct
+</td>
+<td style="text-align:right;">
+12.552972
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:25-34::low_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:25-34
+</td>
+<td style="text-align:left;">
+low_share_pct
+</td>
+<td style="text-align:right;">
+67.540526
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:25-34::mean_score
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:25-34
+</td>
+<td style="text-align:left;">
+mean_score
+</td>
+<td style="text-align:right;">
+0.292780
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:25-34::moderate_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:25-34
+</td>
+<td style="text-align:left;">
+moderate_share_pct
+</td>
+<td style="text-align:right;">
+19.906502
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:25-34::population_m
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:25-34
+</td>
+<td style="text-align:left;">
+population_m
+</td>
+<td style="text-align:right;">
+24.569275
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:35-44::high_population_m
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:35-44
+</td>
+<td style="text-align:left;">
+high_population_m
+</td>
+<td style="text-align:right;">
+2.252937
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:35-44::high_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:35-44
+</td>
+<td style="text-align:left;">
+high_share_pct
+</td>
+<td style="text-align:right;">
+8.834580
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:35-44::low_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:35-44
+</td>
+<td style="text-align:left;">
+low_share_pct
+</td>
+<td style="text-align:right;">
+71.528421
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:35-44::mean_score
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:35-44
+</td>
+<td style="text-align:left;">
+mean_score
+</td>
+<td style="text-align:right;">
+0.276173
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:35-44::moderate_share_pct
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:35-44
+</td>
+<td style="text-align:left;">
+moderate_share_pct
+</td>
+<td style="text-align:right;">
+19.636999
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+demographic::age:35-44::population_m
+</td>
+<td style="text-align:left;">
+demographic
+</td>
+<td style="text-align:left;">
+age:35-44
+</td>
+<td style="text-align:left;">
+population_m
+</td>
+<td style="text-align:right;">
+25.501343
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Section 3 Python/R aggregate reconciliation
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+aggregate_rows
+</th>
+<th style="text-align:right;">
+passed
+</th>
+<th style="text-align:right;">
+maximum_absolute_difference
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+497
+</td>
+<td style="text-align:right;">
+497
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="tabelas-e-gráficos-da-seção-3" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Tabelas e gráficos da
@@ -6821,73 +7923,155 @@ kableExtra::kbl(
 ) |&gt;
   kableExtra::kable_styling(full_width = FALSE, bootstrap_options = c(&quot;striped&quot;, &quot;condensed&quot;)) |&gt;
   print()</code></pre>
-<pre><code>## &lt;table class=&quot;table table-striped table-condensed&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Structure of the compact CAGED analytical input&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; variable &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; missing &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; unique_values &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; class &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; cbo_4d &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; factor &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; periodo &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 65 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; factor &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; post &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; integer &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; treatment &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; integer &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; post_treat &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; integer &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; admissoes &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 6225 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; integer &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; desligamentos &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 6128 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; integer &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ln_salario_real_adm &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 37 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22010 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; numeric &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; asinh_saldo &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 3600 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; numeric &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Structure of the compact CAGED analytical input
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+variable
+</th>
+<th style="text-align:right;">
+missing
+</th>
+<th style="text-align:right;">
+unique_values
+</th>
+<th style="text-align:left;">
+class
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+cbo_4d
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+periodo
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+post
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+treatment
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+post_treat
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+admissoes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6225
+</td>
+<td style="text-align:left;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+desligamentos
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6128
+</td>
+<td style="text-align:left;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ln_salario_real_adm
+</td>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:right;">
+22010
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+asinh_saldo
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3600
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+</tbody>
+</table>
 <pre class="r"><code>caged_input[, .(
   occupation_month_cells = .N,
   occupations = uniqueN(cbo_4d),
@@ -6968,91 +8152,225 @@ caged_light_results</code></pre>
 {"columns":[{"label":["outcome"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimator"],"name":[2],"type":["chr"],"align":["left"]},{"label":["coefficient"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["standard_error"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["n_obs"],"name":[5],"type":["int"],"align":["right"]},{"label":["n_clusters"],"name":[6],"type":["int"],"align":["right"]}],"data":[{"1":"admissoes","2":"ppml","3":"-0.05377240","4":"0.03856021","5":"22049","6":"341"},{"1":"desligamentos","2":"ppml","3":"-0.04201407","4":"0.03470152","5":"22049","6":"341"},{"1":"n_movimentacoes","2":"ppml","3":"-0.04809316","4":"0.03533672","5":"22049","6":"341"},{"1":"ln_salario_real_adm","2":"ols","3":"-0.05074045","4":"0.01033236","5":"22012","6":"341"},{"1":"asinh_saldo","2":"ols","3":"-0.55126689","4":"0.37831661","5":"22049","6":"341"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Light R re-estimation compared with the signed no-controls specification&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; outcome &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; estimator &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; n_clusters &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; coefficient_difference &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; standard_error_difference &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; comparison_pass &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; admissoes &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.05377240 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.03856021 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.05377240 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.03856021 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.0000000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; asinh_saldo &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.55126689 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.37831661 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.55126689 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.37831661 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.0000000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; desligamentos &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.04201407 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.03470152 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.04201407 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.03470152 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.0000000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ln_salario_real_adm &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.05074045 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.01033236 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22012 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.05074045 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.01033236 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.0000000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; n_movimentacoes &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.04809316 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.03533672 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.04809316 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.03533672 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.0000000003 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Light R re-estimation compared with the signed no-controls specification
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+outcome
+</th>
+<th style="text-align:left;">
+estimator
+</th>
+<th style="text-align:right;">
+coefficient
+</th>
+<th style="text-align:right;">
+standard_error
+</th>
+<th style="text-align:right;">
+n_obs
+</th>
+<th style="text-align:right;">
+n_clusters
+</th>
+<th style="text-align:right;">
+reference_coefficient
+</th>
+<th style="text-align:right;">
+reference_standard_error
+</th>
+<th style="text-align:right;">
+coefficient_difference
+</th>
+<th style="text-align:right;">
+standard_error_difference
+</th>
+<th style="text-align:left;">
+comparison_pass
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+admissoes
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+-0.05377240
+</td>
+<td style="text-align:right;">
+0.03856021
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+-0.05377240
+</td>
+<td style="text-align:right;">
+0.03856021
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.0000000000
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+asinh_saldo
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+-0.55126689
+</td>
+<td style="text-align:right;">
+0.37831661
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+-0.55126689
+</td>
+<td style="text-align:right;">
+0.37831661
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.0000000000
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+desligamentos
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+-0.04201407
+</td>
+<td style="text-align:right;">
+0.03470152
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+-0.04201407
+</td>
+<td style="text-align:right;">
+0.03470152
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.0000000000
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ln_salario_real_adm
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+-0.05074045
+</td>
+<td style="text-align:right;">
+0.01033236
+</td>
+<td style="text-align:right;">
+22012
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+-0.05074045
+</td>
+<td style="text-align:right;">
+0.01033236
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.0000000000
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+n_movimentacoes
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+-0.04809316
+</td>
+<td style="text-align:right;">
+0.03533672
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+-0.04809316
+</td>
+<td style="text-align:right;">
+0.03533672
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+-0.0000000003
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="a-implementação-independente-completa-em-r" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> A implementação
@@ -7315,73 +8633,175 @@ covariância e o status de interpretação do resultado.</p>
 estática nacional, a figura de estudo de eventos e a tabela com
 controles setoriais são resultados assinados do V2.
 </div>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Table 5.1 — National average results&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; outcome &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; estimator &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; ci_low &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; ci_high &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; p_value &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; pretrend_status &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; source &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; admissoes &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.053772 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.038560 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.129619 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.022074 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.164076 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; desligamentos &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.042014 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.034702 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.110271 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.026243 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.226841 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ln_salario_real_adm &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.050740 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.010332 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.071064 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.030417 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000001 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22012 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; asinh_saldo &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.551267 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.378317 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -1.295403 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.192869 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.145996 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Table 5.1 — National average results
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+outcome
+</th>
+<th style="text-align:left;">
+estimator
+</th>
+<th style="text-align:right;">
+coefficient
+</th>
+<th style="text-align:right;">
+standard_error
+</th>
+<th style="text-align:right;">
+ci_low
+</th>
+<th style="text-align:right;">
+ci_high
+</th>
+<th style="text-align:right;">
+p_value
+</th>
+<th style="text-align:left;">
+pretrend_status
+</th>
+<th style="text-align:right;">
+n_obs
+</th>
+<th style="text-align:left;">
+source
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+admissoes
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+-0.053772
+</td>
+<td style="text-align:right;">
+0.038560
+</td>
+<td style="text-align:right;">
+-0.129619
+</td>
+<td style="text-align:right;">
+0.022074
+</td>
+<td style="text-align:right;">
+0.164076
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+desligamentos
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+-0.042014
+</td>
+<td style="text-align:right;">
+0.034702
+</td>
+<td style="text-align:right;">
+-0.110271
+</td>
+<td style="text-align:right;">
+0.026243
+</td>
+<td style="text-align:right;">
+0.226841
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ln_salario_real_adm
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+-0.050740
+</td>
+<td style="text-align:right;">
+0.010332
+</td>
+<td style="text-align:right;">
+-0.071064
+</td>
+<td style="text-align:right;">
+-0.030417
+</td>
+<td style="text-align:right;">
+0.000001
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+22012
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+asinh_saldo
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+-0.551267
+</td>
+<td style="text-align:right;">
+0.378317
+</td>
+<td style="text-align:right;">
+-1.295403
+</td>
+<td style="text-align:right;">
+0.192869
+</td>
+<td style="text-align:right;">
+0.145996
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv
+</td>
+</tr>
+</tbody>
+</table>
 <div id="figure-5.1-national-event-studies-and-trajectories" class="section level4" number="3.6.0.1">
 <h4><span class="header-section-number">3.6.0.1</span> Figure 5.1 —
 National event studies and trajectories</h4>
@@ -7390,253 +8810,716 @@ National event studies and trajectories</h4>
 <div class="figcaption">Figure 5.1 — National event studies and
 trajectories</div>
 </div>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Table 5.1.1 — Sector-control co-principal specifications&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; outcome &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_1_coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_1_standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_1_p_value &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_1_n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_1_minimum_clusters &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_1_cluster_counts &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_1_role &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_2_coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_2_standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_2_p_value &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_2_n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_2_minimum_clusters &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_2_cluster_counts &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_2_role &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; coefficient_delta_level_2_minus_level_1 &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_1_pretrend_status &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_1_pretrend_joint_p_value &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_2_pretrend_status &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; level_2_pretrend_joint_p_value &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; two_way_coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; two_way_standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; two_way_p_value &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; two_way_n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; two_way_minimum_clusters &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; two_way_cluster_counts &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; two_way_role &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; two_way_pretrend_status &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; two_way_pretrend_joint_p_value &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; two_way_lead_covariance_positive_semidefinite &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; two_way_pretrend_interpretation &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_1_source &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_2_source &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; difference_source &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_1_pretrend_source &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; level_2_pretrend_source &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; two_way_source &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; two_way_pretrend_source &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; admissoes &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.053772 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.038560 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.164076 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; principal &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.075076 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.035644 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.035914 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 804574 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; co_principal_sector &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.021304 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.075076 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.038403 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.053838 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 804574 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 87 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341, &quot;&quot;divisao&quot;&quot;: 87} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; inference_robustness &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.269453 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; FALSE &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; not_interpretable_non_psd_lead_covariance &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv; step_id=01_no_controls &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_level1_vs_level2.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_diagnostics.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2_two_way &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; desligamentos &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.042014 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.034702 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.226841 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; principal &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.066446 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.034828 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.057253 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 804665 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; co_principal_sector &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.024432 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.066446 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.038195 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.085497 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 804665 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 87 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341, &quot;&quot;divisao&quot;&quot;: 87} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; inference_robustness &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.555449 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; FALSE &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; not_interpretable_non_psd_lead_covariance &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv; step_id=01_no_controls &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_level1_vs_level2.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_diagnostics.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2_two_way &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; n_movimentacoes &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.048093 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.035337 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.174416 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; principal &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.070665 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.034303 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.040155 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 804735 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; co_principal_sector &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.022572 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.070665 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.037701 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.064276 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 804735 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 87 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341, &quot;&quot;divisao&quot;&quot;: 87} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; inference_robustness &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; FALSE &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; not_interpretable_non_psd_lead_covariance &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv; step_id=01_no_controls &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_level1_vs_level2.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_diagnostics.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2_two_way &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ln_salario_real_adm &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.050740 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.010332 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000001 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22012 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; principal &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.035598 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.006438 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 682889 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; co_principal_sector &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.015142 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000158 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000055 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.035598 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.006913 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000002 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 682889 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 87 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341, &quot;&quot;divisao&quot;&quot;: 87} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; inference_robustness &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv; step_id=01_no_controls &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_level1_vs_level2.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_diagnostics.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2_two_way &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; asinh_saldo &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.551267 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.378317 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.145996 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 22049 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; principal &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.139494 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.073427 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.058311 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 804735 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; co_principal_sector &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.411773 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000001 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.139494 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.079670 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.083532 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 804735 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 87 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; {&quot;&quot;cbo_4d&quot;&quot;: 341, &quot;&quot;divisao&quot;&quot;: 87} &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; inference_robustness &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.000000 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; fail &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/specification_ladder.csv; step_id=01_no_controls &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_level1_vs_level2.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_diagnostics.csv &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; results/diagnostics/pretrend_level2.csv; specification_id=level_2_two_way &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Table 5.1.1 — Sector-control co-principal specifications
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+outcome
+</th>
+<th style="text-align:right;">
+level_1_coefficient
+</th>
+<th style="text-align:right;">
+level_1_standard_error
+</th>
+<th style="text-align:right;">
+level_1_p_value
+</th>
+<th style="text-align:right;">
+level_1_n_obs
+</th>
+<th style="text-align:right;">
+level_1_minimum_clusters
+</th>
+<th style="text-align:left;">
+level_1_cluster_counts
+</th>
+<th style="text-align:left;">
+level_1_role
+</th>
+<th style="text-align:right;">
+level_2_coefficient
+</th>
+<th style="text-align:right;">
+level_2_standard_error
+</th>
+<th style="text-align:right;">
+level_2_p_value
+</th>
+<th style="text-align:right;">
+level_2_n_obs
+</th>
+<th style="text-align:right;">
+level_2_minimum_clusters
+</th>
+<th style="text-align:left;">
+level_2_cluster_counts
+</th>
+<th style="text-align:left;">
+level_2_role
+</th>
+<th style="text-align:right;">
+coefficient_delta_level_2_minus_level_1
+</th>
+<th style="text-align:left;">
+level_1_pretrend_status
+</th>
+<th style="text-align:right;">
+level_1_pretrend_joint_p_value
+</th>
+<th style="text-align:left;">
+level_2_pretrend_status
+</th>
+<th style="text-align:right;">
+level_2_pretrend_joint_p_value
+</th>
+<th style="text-align:right;">
+two_way_coefficient
+</th>
+<th style="text-align:right;">
+two_way_standard_error
+</th>
+<th style="text-align:right;">
+two_way_p_value
+</th>
+<th style="text-align:right;">
+two_way_n_obs
+</th>
+<th style="text-align:right;">
+two_way_minimum_clusters
+</th>
+<th style="text-align:left;">
+two_way_cluster_counts
+</th>
+<th style="text-align:left;">
+two_way_role
+</th>
+<th style="text-align:left;">
+two_way_pretrend_status
+</th>
+<th style="text-align:right;">
+two_way_pretrend_joint_p_value
+</th>
+<th style="text-align:left;">
+two_way_lead_covariance_positive_semidefinite
+</th>
+<th style="text-align:left;">
+two_way_pretrend_interpretation
+</th>
+<th style="text-align:left;">
+level_1_source
+</th>
+<th style="text-align:left;">
+level_2_source
+</th>
+<th style="text-align:left;">
+difference_source
+</th>
+<th style="text-align:left;">
+level_1_pretrend_source
+</th>
+<th style="text-align:left;">
+level_2_pretrend_source
+</th>
+<th style="text-align:left;">
+two_way_source
+</th>
+<th style="text-align:left;">
+two_way_pretrend_source
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+admissoes
+</td>
+<td style="text-align:right;">
+-0.053772
+</td>
+<td style="text-align:right;">
+0.038560
+</td>
+<td style="text-align:right;">
+0.164076
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+principal
+</td>
+<td style="text-align:right;">
+-0.075076
+</td>
+<td style="text-align:right;">
+0.035644
+</td>
+<td style="text-align:right;">
+0.035914
+</td>
+<td style="text-align:right;">
+804574
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+co_principal_sector
+</td>
+<td style="text-align:right;">
+-0.021304
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:right;">
+-0.075076
+</td>
+<td style="text-align:right;">
+0.038403
+</td>
+<td style="text-align:right;">
+0.053838
+</td>
+<td style="text-align:right;">
+804574
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341,”“divisao”“: 87}
+</td>
+<td style="text-align:left;">
+inference_robustness
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.269453
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+not_interpretable_non_psd_lead_covariance
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv; step_id=01_no_controls
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_level1_vs_level2.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_diagnostics.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv; specification_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv;
+specification_id=level_2_two_way
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+desligamentos
+</td>
+<td style="text-align:right;">
+-0.042014
+</td>
+<td style="text-align:right;">
+0.034702
+</td>
+<td style="text-align:right;">
+0.226841
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+principal
+</td>
+<td style="text-align:right;">
+-0.066446
+</td>
+<td style="text-align:right;">
+0.034828
+</td>
+<td style="text-align:right;">
+0.057253
+</td>
+<td style="text-align:right;">
+804665
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+co_principal_sector
+</td>
+<td style="text-align:right;">
+-0.024432
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:right;">
+-0.066446
+</td>
+<td style="text-align:right;">
+0.038195
+</td>
+<td style="text-align:right;">
+0.085497
+</td>
+<td style="text-align:right;">
+804665
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341,”“divisao”“: 87}
+</td>
+<td style="text-align:left;">
+inference_robustness
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.555449
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+not_interpretable_non_psd_lead_covariance
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv; step_id=01_no_controls
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_level1_vs_level2.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_diagnostics.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv; specification_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv;
+specification_id=level_2_two_way
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+n_movimentacoes
+</td>
+<td style="text-align:right;">
+-0.048093
+</td>
+<td style="text-align:right;">
+0.035337
+</td>
+<td style="text-align:right;">
+0.174416
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+principal
+</td>
+<td style="text-align:right;">
+-0.070665
+</td>
+<td style="text-align:right;">
+0.034303
+</td>
+<td style="text-align:right;">
+0.040155
+</td>
+<td style="text-align:right;">
+804735
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+co_principal_sector
+</td>
+<td style="text-align:right;">
+-0.022572
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:right;">
+-0.070665
+</td>
+<td style="text-align:right;">
+0.037701
+</td>
+<td style="text-align:right;">
+0.064276
+</td>
+<td style="text-align:right;">
+804735
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341,”“divisao”“: 87}
+</td>
+<td style="text-align:left;">
+inference_robustness
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+FALSE
+</td>
+<td style="text-align:left;">
+not_interpretable_non_psd_lead_covariance
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv; step_id=01_no_controls
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_level1_vs_level2.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_diagnostics.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv; specification_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv;
+specification_id=level_2_two_way
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ln_salario_real_adm
+</td>
+<td style="text-align:right;">
+-0.050740
+</td>
+<td style="text-align:right;">
+0.010332
+</td>
+<td style="text-align:right;">
+0.000001
+</td>
+<td style="text-align:right;">
+22012
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+principal
+</td>
+<td style="text-align:right;">
+-0.035598
+</td>
+<td style="text-align:right;">
+0.006438
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:right;">
+682889
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+co_principal_sector
+</td>
+<td style="text-align:right;">
+0.015142
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000158
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000055
+</td>
+<td style="text-align:right;">
+-0.035598
+</td>
+<td style="text-align:right;">
+0.006913
+</td>
+<td style="text-align:right;">
+0.000002
+</td>
+<td style="text-align:right;">
+682889
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341,”“divisao”“: 87}
+</td>
+<td style="text-align:left;">
+inference_robustness
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv; step_id=01_no_controls
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_level1_vs_level2.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_diagnostics.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv; specification_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv;
+specification_id=level_2_two_way
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+asinh_saldo
+</td>
+<td style="text-align:right;">
+-0.551267
+</td>
+<td style="text-align:right;">
+0.378317
+</td>
+<td style="text-align:right;">
+0.145996
+</td>
+<td style="text-align:right;">
+22049
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+principal
+</td>
+<td style="text-align:right;">
+-0.139494
+</td>
+<td style="text-align:right;">
+0.073427
+</td>
+<td style="text-align:right;">
+0.058311
+</td>
+<td style="text-align:right;">
+804735
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341}
+</td>
+<td style="text-align:left;">
+co_principal_sector
+</td>
+<td style="text-align:right;">
+0.411773
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000001
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:right;">
+-0.139494
+</td>
+<td style="text-align:right;">
+0.079670
+</td>
+<td style="text-align:right;">
+0.083532
+</td>
+<td style="text-align:right;">
+804735
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:left;">
+{““cbo_4d”“: 341,”“divisao”“: 87}
+</td>
+<td style="text-align:left;">
+inference_robustness
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+fail
+</td>
+<td style="text-align:left;">
+results/models/specification_ladder.csv; step_id=01_no_controls
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_level1_vs_level2.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_diagnostics.csv
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv; specification_id=level_2
+</td>
+<td style="text-align:left;">
+results/models/sector_fixed_effect_ladder.csv; level_id=level_2_two_way
+</td>
+<td style="text-align:left;">
+results/diagnostics/pretrend_level2.csv;
+specification_id=level_2_two_way
+</td>
+</tr>
+</tbody>
+</table>
 <div class="status-box status-gate">
 <strong>Gate científico.</strong> O documento deve ser lido junto ao
 status de pré-tendência. Uma pré-tendência conjunta falha, uma matriz de
@@ -22909,77 +24792,191 @@ rais_light_results</code></pre>
 {"columns":[{"label":["model_id"],"name":[1],"type":["chr"],"align":["left"]},{"label":["outcome"],"name":[2],"type":["chr"],"align":["left"]},{"label":["estimator"],"name":[3],"type":["chr"],"align":["left"]},{"label":["coefficient"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["standard_error"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["n_obs"],"name":[6],"type":["int"],"align":["right"]},{"label":["n_clusters"],"name":[7],"type":["int"],"align":["right"]}],"data":[{"1":"rais_static__estoque_3112","2":"estoque_3112","3":"ppml","4":"-0.04292458","5":"0.01557407","6":"2040","7":"341"},{"1":"rais_static__ln_taxa_rotatividade","2":"ln_taxa_rotatividade","3":"ols","4":"-0.01783897","5":"0.02619637","6":"1359","7":"341"},{"1":"rais_static__ln_tempo_emprego_medio","2":"ln_tempo_emprego_medio","3":"ols","4":"-0.02635556","5":"0.01853318","6":"2040","7":"341"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;RAIS light R re-estimation compared with the frozen independent-R result&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; outcome &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; model_id &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; estimator &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; n_clusters &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_n_clusters &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; coefficient_difference &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; standard_error_difference &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; comparison_pass &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; estoque_3112 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rais_static__estoque_3112 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.04292458 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.01557407 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2040 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.04292458 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.01557407 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2040 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 340 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ln_taxa_rotatividade &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rais_static__ln_taxa_rotatividade &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.01783897 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.02619637 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 1359 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.01783897 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.02619637 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 1359 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 340 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ln_tempo_emprego_medio &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; rais_static__ln_tempo_emprego_medio &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.02635556 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.01853318 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2040 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 341 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.02635556 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.01853318 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 2040 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 340 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+RAIS light R re-estimation compared with the frozen independent-R result
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+outcome
+</th>
+<th style="text-align:left;">
+model_id
+</th>
+<th style="text-align:left;">
+estimator
+</th>
+<th style="text-align:right;">
+coefficient
+</th>
+<th style="text-align:right;">
+standard_error
+</th>
+<th style="text-align:right;">
+n_obs
+</th>
+<th style="text-align:right;">
+n_clusters
+</th>
+<th style="text-align:right;">
+reference_coefficient
+</th>
+<th style="text-align:right;">
+reference_standard_error
+</th>
+<th style="text-align:right;">
+reference_n_obs
+</th>
+<th style="text-align:right;">
+reference_n_clusters
+</th>
+<th style="text-align:right;">
+coefficient_difference
+</th>
+<th style="text-align:right;">
+standard_error_difference
+</th>
+<th style="text-align:left;">
+comparison_pass
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+estoque_3112
+</td>
+<td style="text-align:left;">
+rais_static__estoque_3112
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+-0.04292458
+</td>
+<td style="text-align:right;">
+0.01557407
+</td>
+<td style="text-align:right;">
+2040
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+-0.04292458
+</td>
+<td style="text-align:right;">
+0.01557407
+</td>
+<td style="text-align:right;">
+2040
+</td>
+<td style="text-align:right;">
+340
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ln_taxa_rotatividade
+</td>
+<td style="text-align:left;">
+rais_static__ln_taxa_rotatividade
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+-0.01783897
+</td>
+<td style="text-align:right;">
+0.02619637
+</td>
+<td style="text-align:right;">
+1359
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+-0.01783897
+</td>
+<td style="text-align:right;">
+0.02619637
+</td>
+<td style="text-align:right;">
+1359
+</td>
+<td style="text-align:right;">
+340
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ln_tempo_emprego_medio
+</td>
+<td style="text-align:left;">
+rais_static__ln_tempo_emprego_medio
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+-0.02635556
+</td>
+<td style="text-align:right;">
+0.01853318
+</td>
+<td style="text-align:right;">
+2040
+</td>
+<td style="text-align:right;">
+341
+</td>
+<td style="text-align:right;">
+-0.02635556
+</td>
+<td style="text-align:right;">
+0.01853318
+</td>
+<td style="text-align:right;">
+2040
+</td>
+<td style="text-align:right;">
+340
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+</tbody>
+</table>
 <div class="status-box status-gate">
 <strong>Gate científico.</strong> A Família D usa um único ajuste
 Benjamini–Hochberg sobre seus três desfechos registrados. O status de
@@ -23495,146 +25492,387 @@ pnadc_light_results</code></pre>
 {"columns":[{"label":["model_id"],"name":[1],"type":["chr"],"align":["left"]},{"label":["outcome"],"name":[2],"type":["chr"],"align":["left"]},{"label":["arm"],"name":[3],"type":["chr"],"align":["left"]},{"label":["estimator"],"name":[4],"type":["chr"],"align":["left"]},{"label":["coefficient"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["standard_error"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["n_obs"],"name":[7],"type":["int"],"align":["right"]},{"label":["n_clusters"],"name":[8],"type":["int"],"align":["right"]},{"label":["computational_rows"],"name":[9],"type":["int"],"align":["right"]},{"label":["df_k"],"name":[10],"type":["int"],"align":["right"]}],"data":[{"1":"pnadc_principal_informal","2":"informal","3":"A","4":"ols","5":"0.008539600","6":"0.01132477","7":"10009479","8":"115","9":"6600","10":"57"},{"1":"pnadc_principal_conta_propria","2":"conta_propria","3":"A","4":"ols","5":"0.021259441","6":"0.02094821","7":"10009479","8":"115","9":"6600","10":"57"},{"1":"pnadc_principal_ln_renda","2":"ln_renda","3":"A","4":"ols","5":"-0.009282283","6":"0.02175751","7":"9631074","8":"115","9":"6600","10":"57"},{"1":"pnadc_principal_ocupados_total","2":"ocupados_total","3":"B","4":"ppml","5":"0.061563096","6":"0.04296666","7":"5621","8":"101","9":"5621","10":"57"},{"1":"pnadc_principal_ocupados_formais","2":"ocupados_formais","3":"B","4":"ppml","5":"0.042009788","6":"0.04824800","7":"5621","8":"101","9":"5621","10":"57"},{"1":"pnadc_principal_ocupados_informais","2":"ocupados_informais","3":"B","4":"ppml","5":"0.081723342","6":"0.05759949","7":"5621","8":"101","9":"5621","10":"57"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;PNADc light R re-estimation compared with the frozen independent-R result&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; model_id &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; outcome &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; arm &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; estimator &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; n_clusters &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; computational_rows &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; df_k &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_coefficient &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_standard_error &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_n_obs &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; reference_n_clusters &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; coefficient_difference &lt;/th&gt;
-##    &lt;th style=&quot;text-align:right;&quot;&gt; standard_error_difference &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; comparison_pass &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc_principal_conta_propria &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; conta_propria &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; A &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.021259441 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.02094821 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 10009479 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 115 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 6600 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 57 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.021259441 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.02094821 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 10009479 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 115 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc_principal_informal &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; informal &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; A &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.008539600 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.01132477 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 10009479 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 115 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 6600 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 57 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.008539600 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.01132477 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 10009479 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 115 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc_principal_ln_renda &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ln_renda &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; A &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ols &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.009282283 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.02175751 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 9631074 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 115 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 6600 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 57 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; -0.009282283 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.02175751 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 9631074 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 115 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc_principal_ocupados_formais &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ocupados_formais &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; B &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.042009788 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.04824800 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 101 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 57 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.042009788 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.04824800 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 101 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc_principal_ocupados_informais &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ocupados_informais &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; B &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.081723342 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.05759949 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 101 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 57 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.081723342 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.05759949 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 101 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; pnadc_principal_ocupados_total &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ocupados_total &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; B &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; ppml &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.061563096 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.04296666 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 101 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 57 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.061563096 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0.04296666 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 5621 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 101 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; TRUE &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+PNADc light R re-estimation compared with the frozen independent-R
+result
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+model_id
+</th>
+<th style="text-align:left;">
+outcome
+</th>
+<th style="text-align:left;">
+arm
+</th>
+<th style="text-align:left;">
+estimator
+</th>
+<th style="text-align:right;">
+coefficient
+</th>
+<th style="text-align:right;">
+standard_error
+</th>
+<th style="text-align:right;">
+n_obs
+</th>
+<th style="text-align:right;">
+n_clusters
+</th>
+<th style="text-align:right;">
+computational_rows
+</th>
+<th style="text-align:right;">
+df_k
+</th>
+<th style="text-align:right;">
+reference_coefficient
+</th>
+<th style="text-align:right;">
+reference_standard_error
+</th>
+<th style="text-align:right;">
+reference_n_obs
+</th>
+<th style="text-align:right;">
+reference_n_clusters
+</th>
+<th style="text-align:right;">
+coefficient_difference
+</th>
+<th style="text-align:right;">
+standard_error_difference
+</th>
+<th style="text-align:left;">
+comparison_pass
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+pnadc_principal_conta_propria
+</td>
+<td style="text-align:left;">
+conta_propria
+</td>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+0.021259441
+</td>
+<td style="text-align:right;">
+0.02094821
+</td>
+<td style="text-align:right;">
+10009479
+</td>
+<td style="text-align:right;">
+115
+</td>
+<td style="text-align:right;">
+6600
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+0.021259441
+</td>
+<td style="text-align:right;">
+0.02094821
+</td>
+<td style="text-align:right;">
+10009479
+</td>
+<td style="text-align:right;">
+115
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pnadc_principal_informal
+</td>
+<td style="text-align:left;">
+informal
+</td>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+0.008539600
+</td>
+<td style="text-align:right;">
+0.01132477
+</td>
+<td style="text-align:right;">
+10009479
+</td>
+<td style="text-align:right;">
+115
+</td>
+<td style="text-align:right;">
+6600
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+0.008539600
+</td>
+<td style="text-align:right;">
+0.01132477
+</td>
+<td style="text-align:right;">
+10009479
+</td>
+<td style="text-align:right;">
+115
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pnadc_principal_ln_renda
+</td>
+<td style="text-align:left;">
+ln_renda
+</td>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:left;">
+ols
+</td>
+<td style="text-align:right;">
+-0.009282283
+</td>
+<td style="text-align:right;">
+0.02175751
+</td>
+<td style="text-align:right;">
+9631074
+</td>
+<td style="text-align:right;">
+115
+</td>
+<td style="text-align:right;">
+6600
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+-0.009282283
+</td>
+<td style="text-align:right;">
+0.02175751
+</td>
+<td style="text-align:right;">
+9631074
+</td>
+<td style="text-align:right;">
+115
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pnadc_principal_ocupados_formais
+</td>
+<td style="text-align:left;">
+ocupados_formais
+</td>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+0.042009788
+</td>
+<td style="text-align:right;">
+0.04824800
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+0.042009788
+</td>
+<td style="text-align:right;">
+0.04824800
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pnadc_principal_ocupados_informais
+</td>
+<td style="text-align:left;">
+ocupados_informais
+</td>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+0.081723342
+</td>
+<td style="text-align:right;">
+0.05759949
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+0.081723342
+</td>
+<td style="text-align:right;">
+0.05759949
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pnadc_principal_ocupados_total
+</td>
+<td style="text-align:left;">
+ocupados_total
+</td>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:left;">
+ppml
+</td>
+<td style="text-align:right;">
+0.061563096
+</td>
+<td style="text-align:right;">
+0.04296666
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+0.061563096
+</td>
+<td style="text-align:right;">
+0.04296666
+</td>
+<td style="text-align:right;">
+5621
+</td>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+</tr>
+</tbody>
+</table>
 <div class="status-box status-gate">
 <strong>Gate científico.</strong> A Família E aplica Benjamini–Hochberg
 uma vez sobre todos os seis desfechos registrados. Suas estimativas são
@@ -25312,53 +27550,103 @@ suporte e não gera um efeito de tratamento.</li>
 <div id="onde-cada-leitura-encontra-o-código-fonte" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> Onde cada leitura
 encontra o código-fonte</h2>
-<pre><code>## &lt;table class=&quot;table table-striped table-hover table-condensed table-responsive&quot; style=&quot;width: auto !important; margin-left: auto; margin-right: auto;&quot;&gt;
-## &lt;caption&gt;Source-code navigation map&lt;/caption&gt;
-##  &lt;thead&gt;
-##   &lt;tr&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; topic &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; source_file &lt;/th&gt;
-##    &lt;th style=&quot;text-align:left;&quot;&gt; purpose &lt;/th&gt;
-##   &lt;/tr&gt;
-##  &lt;/thead&gt;
-## &lt;tbody&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Section 3 aggregates in R &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; R/section3_replication.R &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Weighted descriptive aggregates and cross-language identifiers &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Independent CAGED contracts in R &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; R/complete_replication.R &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Contract-driven fixed-effects, PPML/OLS, event studies, and validation &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; CAGED raw movements &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code/caged/ingest/build_movements.py &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Official-vintage MOV/FOR/EXC reconstruction with signed weights &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; CAGED occupation-month panel &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code/caged/panel/build_panel.py &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; CBO4-by-month panel, treatment, deflation, and support contracts &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; RAIS independent R replication &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code/rais/r12_cross_replication.R &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Family D static models &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; PNADc independent R replication &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code/pnadc/pnadc_cross_replication.R &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Family E COD3 composition and stock models &lt;/td&gt;
-##   &lt;/tr&gt;
-##   &lt;tr&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Spatial support diagnostics in R &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; code/spatial/spatial_replication.R &lt;/td&gt;
-##    &lt;td style=&quot;text-align:left;&quot;&gt; Placebo, pretrend, and effective-cluster diagnostics &lt;/td&gt;
-##   &lt;/tr&gt;
-## &lt;/tbody&gt;
-## &lt;/table&gt;</code></pre>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Source-code navigation map
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+topic
+</th>
+<th style="text-align:left;">
+source_file
+</th>
+<th style="text-align:left;">
+purpose
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Section 3 aggregates in R
+</td>
+<td style="text-align:left;">
+R/section3_replication.R
+</td>
+<td style="text-align:left;">
+Weighted descriptive aggregates and cross-language identifiers
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Independent CAGED contracts in R
+</td>
+<td style="text-align:left;">
+R/complete_replication.R
+</td>
+<td style="text-align:left;">
+Contract-driven fixed-effects, PPML/OLS, event studies, and validation
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CAGED raw movements
+</td>
+<td style="text-align:left;">
+code/caged/ingest/build_movements.py
+</td>
+<td style="text-align:left;">
+Official-vintage MOV/FOR/EXC reconstruction with signed weights
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CAGED occupation-month panel
+</td>
+<td style="text-align:left;">
+code/caged/panel/build_panel.py
+</td>
+<td style="text-align:left;">
+CBO4-by-month panel, treatment, deflation, and support contracts
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RAIS independent R replication
+</td>
+<td style="text-align:left;">
+code/rais/r12_cross_replication.R
+</td>
+<td style="text-align:left;">
+Family D static models
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PNADc independent R replication
+</td>
+<td style="text-align:left;">
+code/pnadc/pnadc_cross_replication.R
+</td>
+<td style="text-align:left;">
+Family E COD3 composition and stock models
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Spatial support diagnostics in R
+</td>
+<td style="text-align:left;">
+code/spatial/spatial_replication.R
+</td>
+<td style="text-align:left;">
+Placebo, pretrend, and effective-cluster diagnostics
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="checklist-editorial-e-de-integridade" class="section level2" number="6.3">
 <h2><span class="header-section-number">6.3</span> Checklist editorial e

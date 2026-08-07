@@ -264,7 +264,7 @@ Ao longo do documento, cada bloco importante traz uma etiqueta:
 
 O V2 assinado contém 53 artefatos publicados. A versão atual da dissertação também mostra duas tabelas descritivas adicionais no Apêndice A, ambas já sustentadas por backing data do V2. Por isso, o mapa abaixo tem 55 linhas, sem modificar a referência assinada.
 
-```{r manuscript-crosswalk, echo=FALSE}
+```{r manuscript-crosswalk, echo=FALSE, results='asis'}
 crosswalk <- copy(manuscript_catalog)[
   , .(manuscript_label, artifact_id, component, producer, reference_path, command)
 ]
@@ -282,7 +282,7 @@ kableExtra::kbl(
   print()
 ```
 
-```{r paths-used, echo=FALSE}
+```{r paths-used, echo=FALSE, results='asis'}
 paths_used <- data.table(
   object = c("V2 source", "Signed reference", "Analytical bundle"),
   location = c(
@@ -319,6 +319,8 @@ display_code(file.path(v2_root, "R", "section3_replication.R"), language = "r")
 
 ## Diagnóstico da base e reconciliação entre linguagens
 
+A tabela de diagnóstico abaixo não é um resultado substantivo da dissertação. Ela documenta a construção da base: quantas observações entram, quantas permanecem depois dos filtros, qual população os pesos representam e quantas ocupações foram pareadas em quatro ou três dígitos. Assim, ela permite conferir se a amostra e a cobertura da classificação ocupacional correspondem ao desenho descrito na Seção 3.
+
 ```{r section3-diagnostics, echo=FALSE, results='asis'}
 status_box(
   "frozen",
@@ -326,15 +328,15 @@ status_box(
 )
 ```
 
-```{r section3-build-diagnostics, echo=FALSE}
+```{r section3-build-diagnostics, echo=FALSE, results='asis'}
 display_csv(
   "section3/backing_data/data_build_diagnostics.csv",
-  "Section 3 analytical-data build diagnostics",
+  "Diagnóstico da construção da base analítica da Seção 3",
   max_rows = 50L
 )
 ```
 
-```{r section3-r-aggregates, echo=FALSE}
+```{r section3-r-aggregates, echo=FALSE, results='asis'}
 display_csv(
   "section3/validation/r_aggregates.csv",
   "Independent R aggregates for Section 3",
@@ -343,7 +345,7 @@ display_csv(
 )
 ```
 
-```{r section3-language-comparison, echo=FALSE}
+```{r section3-language-comparison, echo=FALSE, results='asis'}
 section3_comparison <- fread(reference_path("section3/validation/python_r_aggregate_comparison.csv"))
 section3_comparison[, comparison_pass := as.logical(comparison_pass)]
 section3_check <- section3_comparison[, .(
@@ -476,7 +478,7 @@ for (artifact in c(
 
 O arquivo abaixo é a versão compacta, sem coeficientes do Python, usada para a réplica independente em R dos modelos nacionais. Ele é suficiente para mostrar a construção de uma amostra de ocupação-mês, a estrutura dos efeitos fixos e os cinco modelos estáticos principais, sem carregar o painel setorial ou os painéis de heterogeneidade.
 
-```{r caged-light-input, eval=TRUE}
+```{r caged-light-input, eval=TRUE, results='asis'}
 caged_input <- fread(file.path(bundle_root, "derived", "cross_replication_input.csv"))
 caged_input[, `:=`(
   cbo_4d = factor(cbo_4d),
@@ -566,7 +568,7 @@ caged_light_results <- rbindlist(
 caged_light_results
 ```
 
-```{r caged-static-reconciliation, echo=FALSE}
+```{r caged-static-reconciliation, echo=FALSE, results='asis'}
 if (!is.null(caged_light_results)) {
   caged_reference <- fread(reference_path("caged/models/specification_ladder.csv"))[step_id == "01_no_controls"]
   caged_comparison <- merge(
@@ -624,7 +626,7 @@ status_box(
 )
 ```
 
-```{r national-results-table, echo=FALSE}
+```{r national-results-table, echo=FALSE, results='asis'}
 display_csv(
   "caged/tables/table_5_1_national_results.csv",
   "Table 5.1 — National average results",
@@ -640,7 +642,7 @@ show_reference_image(
 )
 ```
 
-```{r sector-control-table, echo=FALSE}
+```{r sector-control-table, echo=FALSE, results='asis'}
 display_csv(
   "caged/tables/table_5_1_1_sector_control.csv",
   "Table 5.1.1 — Sector-control co-principal specifications",
@@ -883,7 +885,7 @@ rais_light_results <- rbindlist(
 rais_light_results
 ```
 
-```{r rais-reconciliation, echo=FALSE}
+```{r rais-reconciliation, echo=FALSE, results='asis'}
 if (!is.null(rais_light_results)) {
   rais_reference <- fread(reference_path("rais/backing_data/rais_cross_replication_comparison.csv"))
   rais_comparison <- merge(
@@ -1009,7 +1011,7 @@ pnadc_light_results <- rbindlist(
 pnadc_light_results
 ```
 
-```{r pnadc-reconciliation, echo=FALSE}
+```{r pnadc-reconciliation, echo=FALSE, results='asis'}
 if (!is.null(pnadc_light_results)) {
   pnadc_reference <- fread(reference_path("pnadc/backing_data/pnadc_cross_replication_comparison.csv"))
   pnadc_comparison <- merge(
@@ -1088,7 +1090,7 @@ display_csv("spatial/backing_data/family_f_declaration.csv", "Family F declarati
 
 ## Onde cada leitura encontra o código-fonte
 
-```{r code-navigation, echo=FALSE}
+```{r code-navigation, echo=FALSE, results='asis'}
 source_map <- data.table(
   topic = c(
     "Section 3 aggregates in R",
