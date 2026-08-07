@@ -1,0 +1,29 @@
+{
+  "title": "Occupational Exposure to Artificial Intelligence and Labor-Market Outcomes in Brazil: Replication Package",
+  "description": "Code, analytical-input contracts, signed reference results, and independent Python-R validation for 53 computational tables and figures in a master's dissertation on occupational exposure to artificial intelligence and labor-market outcomes in Brazil.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Orlandi, Manoel Brasil",
+      "orcid": "0009-0008-2432-812X",
+      "affiliation": "Fundação Getulio Vargas, São Paulo School of Economics (FGV EESP)"
+    }
+  ],
+  "keywords": [
+    "reproducibility",
+    "labor economics",
+    "artificial intelligence",
+    "occupational exposure",
+    "Brazil",
+    "difference in differences"
+  ],
+  "license": "MIT",
+  "version": "2.0.0",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/manoelbo/ai-exposure-brazil-replication",
+      "relation": "isSupplementTo"
+    }
+  ]
+}

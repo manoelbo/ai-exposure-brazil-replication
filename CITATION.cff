@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite both the dissertation and this software artifact."
+title: "Occupational Exposure to Artificial Intelligence and Labor-Market Outcomes in Brazil: Replication Package"
+type: software
+authors:
+  - family-names: "Orlandi"
+    given-names: "Manoel Brasil"
+    orcid: "https://orcid.org/0009-0008-2432-812X"
+    affiliation: "Fundação Getulio Vargas, São Paulo School of Economics (FGV EESP)"
+version: "2.0.0"
+license: MIT
+repository-code: "https://github.com/manoelbo/ai-exposure-brazil-replication"
+abstract: >-
+  Code, analytical-input contracts, signed reference results, and independent
+  Python-R validation for 53 computational tables and figures in a master's
+  dissertation on occupational exposure to artificial intelligence and
+  labor-market outcomes in Brazil.
+keywords:
+  - reproducibility
+  - labor economics
+  - artificial intelligence
+  - occupational exposure
+  - Brazil
+  - difference in differences
