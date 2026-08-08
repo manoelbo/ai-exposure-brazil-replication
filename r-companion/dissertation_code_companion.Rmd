@@ -229,7 +229,7 @@ body { font-size: 16px; line-height: 1.55; }
 
 # Como ler este documento
 
-Este é um guia de leitura, não um novo pipeline de replicação. Ele foi feito para ser aberto ao lado da [dissertação no Notion](https://app.notion.com/p/325cc8ca461082d794db01323b295bb5) e do Replication Package V2.
+Este é um guia de leitura, não um novo pipeline de replicação. Ele foi feito para ser aberto ao lado da [Dissertação de Mestrado V3 no Notion](https://app.notion.com/p/Disserta-o-de-Mestrado-V3-33dcc8ca461082bda8880151f42ba19b?source=copy_link) e do Replication Package V2.
 
 O objetivo é tornar visíveis, em uma única navegação:
 
