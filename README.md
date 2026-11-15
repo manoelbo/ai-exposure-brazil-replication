@@ -15,10 +15,34 @@ artefato de referência e comando público. Os números apresentados no texto
 são registrados separadamente em `config/numeric_claims.csv` e reconciliados
 após cada execução.
 
+## Situação atual: pacote de referência
+
+**Nesta versão, o pacote não distribui os dados.** O bundle analítico e o
+cache das fontes brutas não são publicados com o repositório. Por isso, o
+pacote funciona como referência: permite consultar como cada base foi
+construída, como cada modelo foi estimado e como cada tabela e figura foi
+renderizada, e traz em `results/reference/` todos os resultados de referência
+que sustentam a dissertação. Com o que está publicado, não é possível
+reexecutar a análise de ponta a ponta.
+
+O que está disponível:
+
+- o código completo de construção das bases, estimação, diagnóstico e
+  renderização (`code/`, `R/`, `run_replication.py`);
+- os contratos de dados, esquemas e hashes esperados (`config/`), que
+  documentam exatamente quais insumos cada etapa usa;
+- os resultados de referência de todas as tabelas, figuras e diagnósticos
+  (`results/reference/`);
+- o [guia de leitura do código em R](https://manoelbo.github.io/ai-exposure-brazil-replication/).
+
+As instruções abaixo descrevem como o pacote é executado quando os insumos
+estão disponíveis. Elas ficam registradas para documentar o procedimento usado
+na dissertação.
+
 ## Início rápido
 
 Os requisitos são Python 3.10, `uv`, R 4.4.1 e o bundle analítico descrito em
-`DATA_AVAILABILITY.md`.
+`DATA_AVAILABILITY.md`, que não é distribuído nesta versão.
 
 ```bash
 uv sync --frozen
@@ -185,4 +209,5 @@ Use `CITATION.cff` para citar o pacote. O código do pacote e a documentação
 original são licenciados sob a licença MIT; os conjuntos de dados de origem
 permanecem sujeitos aos termos de seus respectivos provedores.
 
-O DOI permanente do Zenodo será adicionado antes da criação da tag `v2.0.0`.
+Ao citar o pacote na dissertação, ele é apresentado como referência do código
+e dos resultados, e não como um pacote de reexecução com dados incluídos.

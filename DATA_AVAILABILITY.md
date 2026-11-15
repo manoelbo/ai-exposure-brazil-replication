@@ -1,5 +1,16 @@
 # Data Availability
 
+## Current status
+
+In this release, neither the analytical bundle nor the raw-source cache is
+published. The repository is a reference package: it documents the code,
+the data contracts (file sets, schemas, byte sizes, and SHA-256 digests), and
+the signed reference results behind every table and figure in the
+dissertation, but it cannot be re-executed end to end from the published
+material alone. The sections below describe the distribution model and the
+sources used to produce the results, so that the construction can be audited
+and, with access to the original sources, reproduced.
+
 ## Distribution model
 
 The Git repository contains code, small redistributable metadata, expected
